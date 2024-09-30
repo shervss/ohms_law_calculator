@@ -19,7 +19,16 @@ try:
         voltage = current * resistance
         print(f"The calculated voltage is: {voltage:.2f} volts")
         
-# Calculate Current (I = V / R)
+    # Calculate Current (I = V / R)
+    elif choice == 2:
+        voltage = float(input("Enter voltage (in volts): "))
+        resistance = float(input("Enter resistance (in ohms): "))
+        if resistance == 0:
+            print("Error: Resistance cannot be zero.")
+        else:
+            current = voltage / resistance
+            print(f"The calculated current is: {current:.2f} amperes")
+            
 # Calculate Resistance (R = V / I)
 # Handle any input that isn't a valid number
 # End of the program
