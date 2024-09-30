@@ -8,7 +8,10 @@ print("1. Voltage (V)")
 print("2. Current (I)")
 print("3. Resistance (R)")
 
-# Ask the user for their choice
+try:
+    # Ask the user for their choice
+    choice = int(input("Enter the number of your choice (1/2/3): "))
+    
 # Calculate Voltage (V = I * R)
 # Calculate Current (I = V / R)
 # Calculate Resistance (R = V / I)
