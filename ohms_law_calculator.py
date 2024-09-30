@@ -47,3 +47,4 @@ except ValueError:
     print("Invalid input. Please enter numerical values only.")
     
 # End of the program
+print("Goodbye!")
