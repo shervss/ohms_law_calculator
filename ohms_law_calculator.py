@@ -41,6 +41,9 @@ try:
 
     else:
         print("Invalid choice. Please select 1, 2, or 3.")
-        
+
+except ValueError:
 # Handle any input that isn't a valid number
+    print("Invalid input. Please enter numerical values only.")
+    
 # End of the program
