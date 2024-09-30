@@ -12,7 +12,13 @@ try:
     # Ask the user for their choice
     choice = int(input("Enter the number of your choice (1/2/3): "))
     
-# Calculate Voltage (V = I * R)
+    # Calculate Voltage (V = I * R)
+    if choice == 1:
+        current = float(input("Enter current (in amperes): "))
+        resistance = float(input("Enter resistance (in ohms): "))
+        voltage = current * resistance
+        print(f"The calculated voltage is: {voltage:.2f} volts")
+        
 # Calculate Current (I = V / R)
 # Calculate Resistance (R = V / I)
 # Handle any input that isn't a valid number
